@@ -2,7 +2,7 @@
 set -Eeuo pipefail
 
 REPO_DIR="${HOME}/homepage"
-WEB_ROOT="/var/www/homepage"
+WEB_ROOT="/var/www/html"
 DOMAIN="joshikiran.com"
 
 echo "Updating homepage repository..."
@@ -21,7 +21,7 @@ sudo systemctl reload nginx
 
 echo "Checking homepage..."
 curl --fail --silent --show-error \
-  --header "Host: ${DOMAIN}" \
-  "http://127.0.0.1/" > /dev/null
+  --resolve "${DOMAIN}:443:127.0.0.1" \
+  "https://${DOMAIN}/" > /dev/null
 
 echo "Homepage deployment completed successfully!"
