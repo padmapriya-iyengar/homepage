@@ -1,0 +1,14 @@
+{
+  "name": "Kiran Joshi — Apps & Experiments",
+  "short_name": "Kiran's Apps",
+  "description": "A collection of practical applications and learning resources.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone"],
+  "background_color": "#081512",
+  "theme_color": "#081512",
+  "categories": ["productivity", "utilities"],
+  "icons": [{ "src": "app-icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}

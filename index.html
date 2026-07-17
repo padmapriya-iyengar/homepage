@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="A collection of practical web applications and learning resources created by Kiran Joshi." />
     <meta name="theme-color" content="#081512" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="application-name" content="Kiran's Workspace" />
+    <meta name="msapplication-TileColor" content="#081512" />
+    <meta name="msapplication-config" content="browserconfig.xml" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="app-icon.svg" type="image/svg+xml" />
     <title>Kiran Joshi — Apps &amp; Experiments</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,6 +26,10 @@
         <span class="brand-mark">KJ</span>
         <span class="brand-name">Kiran Joshi</span>
       </a>
+      <button class="install-button" id="install-app" type="button" hidden>
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v9m-4-4 4 4 4-4M4 15h12" /></svg>
+        Install app
+      </button>
       <a class="profile-link" href="https://joshikiran.com/profile" aria-label="View Kiran Joshi's professional profile">
         <span>About me</span>
         <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5m-7 0h7v7" /></svg>

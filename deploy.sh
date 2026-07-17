@@ -14,6 +14,10 @@ sudo mkdir -p "${WEB_ROOT}"
 sudo install -o www-data -g www-data -m 0644 index.html "${WEB_ROOT}/index.html"
 sudo install -o www-data -g www-data -m 0644 styles.css "${WEB_ROOT}/styles.css"
 sudo install -o www-data -g www-data -m 0644 script.js "${WEB_ROOT}/script.js"
+sudo install -o www-data -g www-data -m 0644 manifest.webmanifest "${WEB_ROOT}/manifest.webmanifest"
+sudo install -o www-data -g www-data -m 0644 service-worker.js "${WEB_ROOT}/service-worker.js"
+sudo install -o www-data -g www-data -m 0644 app-icon.svg "${WEB_ROOT}/app-icon.svg"
+sudo install -o www-data -g www-data -m 0644 browserconfig.xml "${WEB_ROOT}/browserconfig.xml"
 
 echo "Validating and reloading Nginx..."
 sudo nginx -t
